@@ -102,8 +102,8 @@ libname output "&CODEHOME.\output";
 * Final ETL - transform ACS variables into VDW Census Demog variables.;
 %include "&CODEHOME.\lib\acs_to_vdw.sas";
 
-footnote "Let's double check all this";
 title "ACS Records by State";
+title2 "Quick common sense check of counts";
 proc freq data=output.census_demog;
 	tables state;
 run;
