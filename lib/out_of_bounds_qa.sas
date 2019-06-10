@@ -3,7 +3,7 @@
 * I don't love that the code traverses the whole dataset for every variable.
   There's gotta be a better way. Please send me a pull request when you work it out!;
 
-%make_spm_comment(ACS Census quick QA);
+%*make_spm_comment(ACS Census quick QA);
 
 libname _output "\\groups.ghc.org\data\CTRHS\VDW_SDOH\PROGRAMMING\Programs\VDWCensus\output";
 

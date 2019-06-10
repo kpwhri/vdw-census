@@ -36,11 +36,11 @@
 /* EDIT SECTION */
 
 * Any logon scripts & credentials;
-%include "\\HOME\mackcd1\Documents\Systems\sasntlogon.sas";
-%include "&GHRIDW_ROOT.\remote\RemoteStart.sas";
-options formchar='|-++++++++++=|-/|<>*' errorabend;
-%make_spm_comment(Process ACS Census data);
+%*include "\\HOME\mackcd1\Documents\Systems\sasntlogon.sas";
+%*include "&GHRIDW_ROOT.\remote\RemoteStart.sas";
+%*make_spm_comment(Process ACS Census data);
 * options mprint;
+options formchar='|-++++++++++=|-/|<>*' errorabend;
 
 * Base directory;
 %LET codehome = \\groups.ghc.org\data\CTRHS\VDW_SDOH\PROGRAMMING\Programs\VDWCensus;
@@ -116,5 +116,5 @@ run;
 %&CLEAN_TEMP_DIRS.();
 
 * Signoff;
-endrsubmit;
-signoff;
+* endrsubmit;
+* signoff;

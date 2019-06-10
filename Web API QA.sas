@@ -37,11 +37,11 @@
 /* EDIT SECTION */
 
 * Any logon scripts & credentials;
-%include "\\HOME\mackcd1\Documents\Systems\sasntlogon.sas";
-%include "&GHRIDW_ROOT.\remote\RemoteStart.sas";
-options formchar='|-++++++++++=|-/|<>*' errorabend;
+%*include "\\HOME\mackcd1\Documents\Systems\sasntlogon.sas";
+%*include "&GHRIDW_ROOT.\remote\RemoteStart.sas";
+%*make_spm_comment(Test ACS Census data);
 *options mprint;
-%make_spm_comment(Test ACS Census data);
+options formchar='|-++++++++++=|-/|<>*' errorabend;
 
 * Set the locations of files.;
 * Base directory for all work.;
@@ -118,3 +118,7 @@ http://support.sas.com/documentation/cdl/en/proc/61895/HTML/default/viewer.htm#a
 proc datasets library=_acs_api;
   delete select_&STATE. &ACSGROUP.;
 run;
+
+* Signoff;
+* endrsubmit;
+* signoff;
