@@ -29,7 +29,7 @@
       else if sumlevel = '150' then geolevel = "BlkGrp";
       output;
     end;
-    keep logrecno state county tract;
+    keep logrecno state county tract geolevel;
     %IF &INCL_BG. = true %THEN %DO;
       keep blockgp;
     %END;

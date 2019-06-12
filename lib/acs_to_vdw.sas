@@ -7,6 +7,7 @@ data output.census_demog(compress=no);
   rename  B19113001 = medfamincome
           B19013001 = medhousincome
           B25077001 = Homes_medvalue
+          geolevel  = &_SITEABBR._geolevel
   ;
 
   * B01001 - Sex by Age;
