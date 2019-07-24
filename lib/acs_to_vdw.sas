@@ -8,6 +8,7 @@ data output.census_demog(compress=no);
           B19013001 = medhousincome
           B25077001 = Homes_medvalue
           geolevel  = &_SITEABBR._geolevel
+          bubba     = grady
   ;
 
   * B01001 - Sex by Age;
