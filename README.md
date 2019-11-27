@@ -27,6 +27,7 @@ https://www2.census.gov/programs-surveys/acs/summary_file/2017/data/5_year_entir
     - https://www2.census.gov/programs-surveys/acs/summary_file/2017/documentation/user_tools/
     - untar it (it'll go into /Tracts_Block_Groups_only) before continuing
   - ACS_5yr_Seq_Table_Number_Lookup.sas7bdat
+    - https://www2.census.gov/programs-surveys/acs/summary_file/2017/documentation/user_tools/
 
 2. Copy all 3 to the download directory specified (&CODEHOME./download).
 3. Double check and alter the *"* Names of downloaded ACS files"* section if downloaded file names have changed.
